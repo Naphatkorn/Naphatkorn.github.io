@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+.group1 {
+    background-color: coral;
+}
+
+.group2 {
+    background-color: aquamarine;
+}
+
+p {
+    color: white;
+} 
+
+.group2 p {
+    color: black;
+} 
+
+#text4 {
+    color: red;
+}

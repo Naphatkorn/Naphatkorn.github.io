@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    height: 150px;
+    gap: 10px;
+    background-color: bisque;
+}
+
+.flex-item {
+    /* flex: flex-grow flex-shrink flex-basis;*/
+    /* default 1 0 auto */
+    /* usually 1 1 0 */
+    flex: 1 0 auto;
+
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+}
+
+.flex-item:nth-child(2) {
+    order: 0;
+}
+
+.flex-item:nth-child(3) {
+    order: 0;
+}

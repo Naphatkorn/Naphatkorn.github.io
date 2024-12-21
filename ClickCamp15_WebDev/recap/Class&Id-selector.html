@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and ID Selector Example</title>
+    <!-- internal CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        /* ID Selector */
+        #main-container {
+            width: 80%;
+            margin: 20px auto;
+            /* padding: X for all sides */
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #unique-highlight {
+            /* padding: X for all sides */
+            padding: 15px;
+            border: 2px dashed #ff5733;
+            background-color: #fff3e0;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .content-section {
+            margin-bottom: 20px;
+            /* padding: X for all sides */
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* Class Selector with pseudo class */
+        .content-section:hover {
+            background-color: #e9ecef;
+        }
+
+        .content-header {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        .content-body {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Descendant Selector */
+        .content-section .content-body strong {
+            color: #28a745;
+        }
+
+        /* Box Model properties*/
+        .highlight-box {
+            /*margign: top&bottom left&right*/
+            margin: 20px 0;
+            /* padding: X for all sides */
+            padding: 20px;
+            border: 2px solid #28a745;
+            background-color: #d4edda;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Descendant Selector*/
+        .highlight-box p {
+            /* margin: 0 for all sides */
+            margin: 0;
+            color: #155724;
+        }
+
+        /* Extra Classes for Styling Multiple Elements */
+        .decorated {
+            /* padding: X for all sides */
+            padding: 10px;
+            /*margign: top&bottom left&right*/
+            margin: 10px 0;
+            /* border: size style color */
+            border: 1px solid #ff6f61;
+            background-color: #ffecec;
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        .decorated:hover {
+            background-color: #ffdad6;
+        }
+
+        /* flex */
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .decorated-box {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #6c757d;
+            background-color: #f8f9fa;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* Relative Units */
+        footer {
+            margin-top: 40px;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            background-color: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>ทบทวน HTML & CSS</h2>
+    </header>
+
+    <h1>Properties, Class & ID Selectors</h1>
+
+    <div id="main-container">
+
+        <div class="content-section">
+            <div class="content-header">Class Selector</div>
+            <div class="content-body">
+                Classes allow you to style multiple elements with the same properties. 
+                <strong>Notice this styled text using a descendant selector.</strong>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="content-header">ID Selector in Action</div>
+            <div class="content-body">
+                The unique element below is styled using an ID selector.
+            </div>
+        </div>
+
+        <div id="unique-highlight">
+            <p>This section is uniquely styled using the <strong>#unique-highlight</strong> ID selector. IDs are useful for targeting specific elements.</p>
+        </div>
+
+        <div class="highlight-box">
+            <p>The box model allows control over padding, border, and margin to create visually appealing layouts.</p>
+        </div>
+
+        <div class="decorated">This element has "decorated" class</div>
+        <div class="decorated">Apply element with "decorated" class have the same style.</div>
+    
+        <!-- flex container -->
+        <div class="flex-container">
+            <div class="decorated-box decorated">Flexible Box 1 with .decorated</div>
+            <div class="decorated-box decorated">Flexible Box 2 with .decorated</div>
+            <div class="decorated-box decorated">Flexible Box 3 with .decorated</div>
+        </div>
+
+    </div>
+
+    <footer>
+        Made with HTML and CSS to demonstrate class, ID, descendant selectors, relative units, and the box model.
+    </footer>
+</body>
+</html>
