@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "Montserrat", "Prompt", serif;
+    position: relative;
+}
+
+.backg {
+    background-image: url(/png/dan.jpg);
+    height: 650px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+
+/* .backg {
+    background-image: url(/png/dan.jpg);
+    height: 800px;
+    width: 100%;
+
+    whi {
+        z-index: 0;
+    }
+
+    a {
+        z-index: 1;
+    }
+} */
+
+
+
+/* nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #111;
+    padding: 20px;
+    height: 76px;
+    box-shadow: 1px 2px 5px 0 #111, 1px 2px 5px 0 #111;
+    /* box-shadow: 0 2px 5px 0 #00000029, 0 2px 10px 0 #0000001f; *
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav h2 {
+    margin-right: auto;
+    margin-left: 36px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+nav .right {
+    display: flex;
+    gap: 16px;
+}
+
+nav .right a {
+    color: #fff;
+    text-decoration: dashed;
+    padding: 6px;
+    transition: 300ms;
+}
+
+nav .chill {
+    max-block-size: 24px;
+}
+
+nav a:hover {
+    border-radius: 24px;
+    background-color: #ccc;
+    color: #111;
+    box-shadow: #777777 -2px 2px 4px;
+}
+
+.containers {
+    margin: 36px auto;
+    background-color: #ccc;
+    padding: 50px;
+    max-width: 1800px;
+    border-radius: 36px;
+}
+
+.containers .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 750px;
+    height: 530px;
+    background-color: #777777;
+    border-radius: 72px;
+}
+
+.containers .pic img {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 72px;
+}
+
+.content {
+    margin-top: 20px;
+    background-color: ;
+}
+
+.accordion {
+    background-color: #777777;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 16px 36px;
+    border-radius: 16px 16px 0 0;
+    text-align: left;
+    transition: 300ms;
+}
+
+.active, .accordion:hover {
+    background-color: #8d8d8d;
+}
+
+.accordion::after {
+    content: "\2228";
+    font-weight: bold;
+    color: white;
+    float: right;
+}
+
+.active::after {
+    content: "\2227";
+    font-weight: bold;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #8d8d8d;
+    color: white;
+    max-height: 0;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    transition: max-height 300ms ease-out;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+} */
