@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="solvestyle.css">
     <link rel="stylesheet" href="/output.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Solve</title>
 </head>
 <body>
@@ -22,15 +22,15 @@
 
     <div class="absolute flex flex-col justify-center items-center mt-20 z-0 max-xl:mr-4">
         <div class="w-full">
-            <div class="flex flex-col justify-around items-start gap-6 w-1/3 h-fit p-8 float-right mr-44 bg-white text-black border-2 border-sky-500 rounded-2xl shadow-xl max-xl:w-5/6">
+            <div data-aos="fade-left" data-aos-duration="1500" class="flex flex-col justify-around items-start gap-6 w-1/3 h-fit p-8 float-right mr-44 bg-white text-black border-2 border-sky-500 rounded-2xl shadow-xl max-lg:w-[50%] max-md:w-[80%] max-md:mx-auto">
                 <h3 class="font-bold text-4xl max-xl:text-xl">วิธีการแก้ปัญหา</h3>
                 <p class="text-xl leading-10 max-xl:text-lg">
-                    บุหรี่ไฟฟ้ากลายเป็นทางเลือกที่ได้รับความนิยมในกลุ่มผู้ที่ต้องการเลิกสูบบุหรี่แบบปกติ เนื่องจากมีความเชื่อกันว่ามันอาจจะปลอดภัยกว่า และสามารถช่วยลดความเสี่ยงจากการสูบบุหรี่จริงๆ ได้ แต่นั่นไม่ได้หมายความว่าบุหรี่ไฟฟ้าปลอดภัยหรือไม่มีโทษใดๆ เลย
+                    ต้องครอบคลุมทั้งในระดับบุคคล ครอบครัว ชุมชน และสังคม โดยเน้นการป้องกัน การให้ความรู้ และการสนับสนุนให้ผู้ที่ใช้บุหรี่ไฟฟ้าเลิกใช้ รวมถึงการควบคุมในเชิงนโยบายและกฎหมาย เพื่อแก้ปัญหาอย่างยั่งยืน
                 </p>
             </div>
         </div>
         <div class="w-full">
-            <div class="flex flex-col justify-around items-start gap-6 w-1/3 h-fit p-8 ml-44 bg-white text-black border-2 border-sky-500 rounded-2xl shadow-xl max-xl:w-5/6">
+            <div data-aos="fade-right" data-aos-duration="1500" class="flex flex-col justify-around items-start gap-6 w-1/3 h-fit p-8 ml-44 bg-white text-black border-2 border-sky-500 rounded-2xl shadow-xl max-lg:w-[50%] max-md:w-[80%] max-md:mx-auto">
                 <h3 class="font-bold text-4xl max-xl:text-xl">ผลกระทบต่อสุขภาพ</h3>
                 <p class="text-xl leading-10 max-xl:text-lg">
                     บุหรี่ไฟฟ้ากลายเป็นทางเลือกที่ได้รับความนิยมในกลุ่มผู้ที่ต้องการเลิกสูบบุหรี่แบบปกติ เนื่องจากมีความเชื่อกันว่ามันอาจจะปลอดภัยกว่า และสามารถช่วยลดความเสี่ยงจากการสูบบุหรี่จริงๆ ได้ แต่นั่นไม่ได้หมายความว่าบุหรี่ไฟฟ้าปลอดภัยหรือไม่มีโทษใดๆ เลย
@@ -41,41 +41,88 @@
 
     <div class="backg mb-6 bg-fixed bg-no-repeat bg-center bg-cover"></div>
 
-    <div class="flex flex-col items-center justify-center gap-2 w-[50%] mx-auto">
-        <div class="font-semibold text-black text-3xl my-8">โทษจากบุหรี่ไฟฟ้าในด้านต่าง ๆ</div>
-        <div class="collapse collapse-arrow bg-info text-white shadow-sm">
+    <div class="flex flex-col items-center justify-center gap-2 w-[50%] mx-auto max-sm:mt-40">
+        <div class="font-semibold text-black text-3xl my-8" data-aos="fade-down" data-aos-duration="750">วิธีการแก้ปัญหาต่าง ๆ</div>
+        <div data-aos="fade-down-left" class="collapse collapse-arrow bg-info text-white shadow-sm">
             <input type="checkbox" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">ปริมาณสารเสพติด</div>
+            <div class="collapse-title text-xl font-medium">1. ระดับบุคคล</div>
             <div class="collapse-content">
-                <p>บุหรี่ไฟฟ้ามักมีปริมาณนิโคตินสูง ทำให้เกิดการเสพติดได้ง่าย โดยเฉพาะในเยาวชนและผู้ที่ยังไม่มีประสบการณ์กับสารนิโคติน</p>
+                <p>
+                    <p>&#x2022; ให้ความรู้และตระหนักถึงโทษของบุหรี่ไฟฟ้า:</p>
+                    สร้างความเข้าใจเกี่ยวกับอันตรายของสารเคมีในบุหรี่ไฟฟ้า เช่น นิโคติน สารก่อมะเร็ง และผลกระทบต่อสุขภาพ
+                    <p>&#x2022; สนับสนุนการเลิกบุหรี่ไฟฟ้า:</p>
+                    ใช้โปรแกรมช่วยเลิกบุหรี่ เช่น การปรึกษาแพทย์ผู้เชี่ยวชาญ
+                    ใช้ผลิตภัณฑ์ทดแทนนิโคติน เช่น แผ่นแปะหรือหมากฝรั่ง
+                    สนับสนุนกลุ่มช่วยเหลือหรือการบำบัดทางจิตวิทยา
+                </p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-info text-white shadow-sm">
+        <div data-aos="fade-down-right" class="collapse collapse-arrow bg-info text-white shadow-sm">
             <input type="checkbox" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">ผลกระทบต่อสมองและพัฒนาการ</div>
+            <div class="collapse-title text-xl font-medium">2. ระดับครอบครัว</div>
             <div class="collapse-content">
-              <p>นิโคตินมีผลกระทบต่อสมอง โดยเฉพาะในเด็กและวัยรุ่น ทำให้สมองพัฒนาได้ไม่เต็มที่ อาจส่งผลต่อความจำ การเรียนรู้ และการตัดสินใจในระยะยาว</p>
+                <p>
+                    <p>&#x2022; พูดคุยและให้คำแนะนำ:</p>
+                    สร้างความเข้าใจในครอบครัวเกี่ยวกับอันตรายของบุหรี่ไฟฟ้า
+                    ส่งเสริมให้สมาชิกในครอบครัวเป็นตัวอย่างที่ดี เช่น งดสูบบุหรี่
+                    <p>&#x2022; สนับสนุนทางอารมณ์:</p>
+                    ช่วยผู้ที่ต้องการเลิกบุหรี่ไฟฟ้าด้วยการให้กำลังใจและหลีกเลี่ยงการตำหนิ
+                </p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-info text-white shadow-sm">
+        <div data-aos="fade-down-left" class="collapse collapse-arrow bg-info text-white shadow-sm">
             <input type="checkbox" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">อันตรายจากอุปกรณ์</div>
+            <div class="collapse-title text-xl font-medium">3. ระดับชุมชน</div>
             <div class="collapse-content">
-              <p>อุปกรณ์บุหรี่ไฟฟ้าอาจมีความเสี่ยงในการระเบิดหรือไฟไหม้ หากมีข้อบกพร่องทางเทคนิค</p>
+                <p>
+                    <p>&#x2022; จัดกิจกรรมรณรงค์:</p>
+                    ให้ความรู้ในโรงเรียนและชุมชนเกี่ยวกับโทษของบุหรี่ไฟฟ้า
+                    จัดกิจกรรมปลอดบุหรี่ในสถานที่สำคัญ เช่น วัด โรงเรียน และศูนย์ชุมชน
+                    <p>&#x2022; สร้างเครือข่ายความร่วมมือ:</p>
+                    รวมกลุ่มองค์กรภาคประชาชนเพื่อรณรงค์และช่วยเหลือผู้ที่ใช้บุหรี่ไฟฟ้า
+                </p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-info text-white shadow-sm">
+        <div data-aos="fade-up-left" class="collapse collapse-arrow bg-info text-white shadow-sm">
             <input type="checkbox" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">ความเสี่ยงต่อผู้อื่น</div>
+            <div class="collapse-title text-xl font-medium">4. ระดับสังคม</div>
             <div class="collapse-content">
-              <p>ไอหรือควันที่เกิดจากการสูบบุหรี่ไฟฟ้า อาจมีสารเคมีที่ส่งผลเสียต่อสุขภาพของคนรอบข้าง (Secondhand vapor)</p>
+                <p>
+                    <p>&#x2022; การออกกฎหมายและควบคุม:</p>
+                    ควบคุมการนำเข้าและจำหน่ายบุหรี่ไฟฟ้า รวมถึงน้ำยาที่มีนิโคติน
+                    ห้ามการโฆษณาและการส่งเสริมการขายบุหรี่ไฟฟ้า โดยเฉพาะในกลุ่มเยาวชน
+                    กำหนดโทษสำหรับการฝ่าฝืนกฎหมายเกี่ยวกับบุหรี่ไฟฟ้า
+                    <p>&#x2022; ส่งเสริมการวิจัยและการศึกษา:</p>
+                    สนับสนุนการวิจัยเกี่ยวกับผลกระทบของบุหรี่ไฟฟ้าเพื่อให้ข้อมูลที่ถูกต้องแก่ประชาชน
+                    ส่งเสริมการพัฒนาแนวทางเลิกบุหรี่ที่มีประสิทธิภาพมากขึ้น
+                </p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-info text-white shadow-sm">
+        <div data-aos="fade-up-right" class="collapse collapse-arrow bg-info text-white shadow-sm">
             <input type="checkbox" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">ผลกระทบทางสังคม</div>
+            <div class="collapse-title text-xl font-medium">5. การใช้สื่อและเทคโนโลยี</div>
             <div class="collapse-content">
-              <p>บุหรี่ไฟฟ้าอาจส่งเสริมการเริ่มต้นสูบบุหรี่ธรรมดาในผู้ที่ไม่เคยสูบบุหรี่มาก่อน (Gateway Effect)</p>
+                <p>
+                    <p>&#x2022; เผยแพร่ข้อมูลผ่านสื่อ:</p>
+                    ผลิตสื่อให้ความรู้ เช่น วิดีโอ โปสเตอร์ และอินโฟกราฟิกเกี่ยวกับโทษของบุหรี่ไฟฟ้า
+                    ใช้โซเชียลมีเดียในการสื่อสารข้อมูลที่ตรงกับกลุ่มเป้าหมาย
+                    <p>&#x2022; สร้างแอปพลิเคชันช่วยเลิกบุหรี่:</p>
+                    แอปที่ช่วยติดตามพฤติกรรม สนับสนุนคำแนะนำ และให้กำลังใจแก่ผู้ที่ต้องการเลิกบุหรี่ไฟฟ้า
+                </p>
+            </div>
+        </div>
+        <div data-aos="fade-up-left" class="collapse collapse-arrow bg-info text-white shadow-sm">
+            <input type="checkbox" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">6. การป้องกันและดูแลเยาวชน</div>
+            <div class="collapse-content">
+              <p>
+                <p>&#x2022; สร้างภูมิคุ้มกันทางจิตใจ:</p>
+                สอนให้เยาวชนรู้จักการปฏิเสธและหลีกเลี่ยงบุหรี่ไฟฟ้า
+                <p>&#x2022; ควบคุมการเข้าถึง:</p>
+                จำกัดการขายบุหรี่ไฟฟ้าแก่ผู้ที่มีอายุต่ำกว่า 18 ปี
+                <p>&#x2022; สนับสนุนกิจกรรมสร้างสรรค์:</p>
+                ส่งเสริมกิจกรรมที่ช่วยให้เยาวชนมีทางเลือกที่ดี เช่น กีฬา ดนตรี และศิลปะ
+              </p>
             </div>
         </div>
     </div>
@@ -84,6 +131,11 @@
         <h3>@ copyright</h3>
     </footer>
 
+    <script src="./solve.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 <!-- 
     <nav>
         <h2>วิธีการแก้ปัญหา</h2>

@@ -11,6 +11,7 @@ body {
     background-color: #f3f3f3;
     font-family: "Montserrat", "Prompt", serif;
     position: relative;
+    overflow-x: hidden;
 }
 
 .backg {

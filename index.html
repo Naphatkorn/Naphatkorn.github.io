@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="/png/icon.png" type="image/x-icon">
     <title>Dangerous from Vape</title>
 
@@ -16,29 +17,29 @@
             <img src="/png/icon.png" alt="" >
         </a>
         <nav class="flex">
-            <a href="https://forms.gle/A3oh5RWGUchttdZ37" target="_blank" class="bg-white p-5 rounded-bl-xl duration-300 hover:bg-sky-500 hover:text-white active:bg-sky-600 active:text-white shadow-xl">Survey</a>
+            <a href="https://forms.gle/pKhrE3dYx9VyYdgQ8" target="_blank" class="bg-white p-5 rounded-bl-xl duration-300 hover:bg-sky-500 hover:text-white active:bg-sky-600 active:text-white shadow-xl">Survey</a>
             <a href="#members" class="bg-white p-5 rounded-br-xl duration-300 hover:bg-sky-500 hover:text-white active:bg-sky-600 active:text-white shadow-xl">Members</a>
         </nav>
     </header>
     <div class="backg flex items-center justify-center mx-auto mb-6 shadow-lg bg-fixed bg-cover bg-center bg-no-repeat">
-        <h1 class="sv-fade flex justify-center items-center text-sky-500 font-bold text-5xl pt-24">
+        <h1 class="sv-fade flex justify-center items-center text-sky-500 font-bold text-5xl pt-24" data-aos="zoom-in">
             Stop Vape
         </h1>
     </div>
 
     <main class="flex justify-center items-center gap-12 mt-28 max-lg:flex-col max-lg:gap-14">
         <!-- sec1 -->
-        <a href="/danger/danger.html" class="topic fade relative w-1/5 rounded-3xl overflow-hidden block shadow-xl max-lg:w-4/5">
+        <a href="/danger/danger.html" data-aos="fade-right" data-aos-duration="1000" class="topic fade relative w-1/5 rounded-3xl overflow-hidden block shadow-xl max-lg:w-4/5" >
             <img src="/png/icon_dan.jpg" alt="" class="absolute w-full object-cover opacity-80">
             <h3 class="relative flex z-10 h-full justify-center items-end text-white text-lg p-6">โทษของบุหรี่ไฟฟ้า</h3>
             <div class="absolute inset-0 bg-gradient-to-t from-sky-500 to-tranparent"></div>
         </a>
-        <a href="/campaign/campaign.html" class="topic fade relative w-1/5 rounded-3xl overflow-hidden block shadow-xl max-lg:w-4/5">
+        <a href="/campaign/campaign.html" data-aos="fade-right" data-aos-duration="1500" class="topic fade relative w-1/5 rounded-3xl overflow-hidden block shadow-xl max-lg:w-4/5">
             <img src="/png/icon_cam.jpg" alt="" class="absolute h-full object-cover opacity-80">
             <h3 class="relative flex z-10 h-full justify-center items-end text-white text-lg p-6">การรณรงค์</h3>
             <div class="absolute inset-0 bg-gradient-to-t from-sky-500 to-tranparent"></div>
         </a>
-        <a href="/solve/solve.html" class="topic fade relative w-1/5 rounded-3xl overflow-hidden block shadow-xl max-lg:w-4/5">
+        <a href="/solve/solve.html" data-aos="fade-right" data-aos-duration="2000" class="topic fade relative w-1/5 rounded-3xl overflow-hidden block shadow-xl max-lg:w-4/5">
             <img src="/png/dan.jpg" alt="" class="absolute h-full object-cover opacity-80">
             <h3 class="relative flex z-10 h-full justify-center items-end text-white text-lg p-6">วิธีการแก้ปัญหา</h3>
             <div class="absolute inset-0 bg-gradient-to-t from-sky-500 to-tranparent"></div>
@@ -47,9 +48,9 @@
 
     <hr class="w-2/3 mx-auto mt-28 mb-12 border-black">
 
-    <section id="members" class="flex flex-col justify-center items-center mt-12 gap-14">
-        <h2 class="mem-fade text-4xl font-semibold text-slate-700">Members</h2>
-        <div class="flex justify-center items-center gap-40 text-slate-600 max-lg:flex-col max-lg:gap-14">
+    <section id="members" class="flex flex-col justify-center items-center mt-12 gap-14" >
+        <h2 class="mem-fade text-4xl font-semibold text-slate-700" data-aos="fade-down" data-aos-duration="750">Members</h2>
+        <div class="flex justify-center items-center gap-40 text-slate-600 max-lg:flex-col max-lg:gap-14" data-aos="fade-left" data-aos-duration="1500">
             <div class="mem-fade flex flex-col justify-center items-center gap-5">
                 <h3 class="text-2xl font-medium">Naphatkorn Rukkapao</h3>
                 <p class="text-xl">M.5/8 | No.2</p>
@@ -75,7 +76,10 @@
     </footer>
 
     <script src="script.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 <!-- 
     <header>

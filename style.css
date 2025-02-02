@@ -16,6 +16,7 @@ body {
     background-color: #f3f3f3;
     font-family: "Montserrat", "Prompt", serif;
     position: relative;
+    overflow-x: hidden;
 }
 
 .backg {
@@ -25,7 +26,7 @@ body {
     z-index: 10;
 }
 
-@keyframes appear-sv {
+/* @keyframes appear-sv {
     from {
         opacity: 100%;
         scale: 2;
@@ -75,7 +76,7 @@ body {
     animation: mem-fade linear;
     animation-timeline: view();
     animation-range: entry 0%;
-}
+} */
 
 .topic {
     
